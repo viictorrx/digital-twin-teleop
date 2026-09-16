@@ -139,6 +139,6 @@ ros2 run meu_pacote_robo proxy_seguranca_node
 
 - **Gustavo Moreira Silva**
 - **Victor Souza Ferreira**
-- **Vinicius**
-- **Matheus**
+- **Vinícius Geronimo da Costa**
+- **Matheus Vieira Ferreira**
 - **Pedro Augusto Brito Castilho Pereira**
