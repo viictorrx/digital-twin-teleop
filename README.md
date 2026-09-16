@@ -128,4 +128,8 @@ ros2 run meu_pacote_robo proxy_seguranca_node
 
 ## ✍️ COLABORADORES
 
+- **Gustavo Moreira**
 - **Victor Souza Ferreira**
+- **Vinicius**
+- **Matheus**
+- **Pedro Augusto Brito Castilho Pereira**
