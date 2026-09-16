@@ -10,6 +10,15 @@
 
 O projeto combina um robô móvel simulado no **Gazebo** com um **Gêmeo Digital (Digital Twin)** desenvolvido na **Unity**. O operador acompanha o estado do robô em tempo real e pode controlá-lo remotamente por uma interface 3D, com validação dos comandos antes que eles cheguem à simulação.
 
+## ☢️ O Cenário: Inspeção em Área Contaminada
+
+Inspirado em ambientes de alto risco (como as instalações de Chernobyl), o projeto simula a inspeção de uma fábrica abandonada e contaminada, onde a presença humana é inviável.
+
+O ambiente 3D está sendo modelado no **Blender** e será compartilhado entre as duas plataformas:
+
+- **Gazebo:** Utiliza a malha física do ambiente para calcular colisões e gerar os dados dos sensores (LiDAR).
+- **Unity:** Utiliza a malha com texturas e iluminação imersiva para criar a interface visual do operador (Gêmeo Digital).
+
 ## 🧭 Navegação
 
 - [Funcionalidades](#-funcionalidades)
@@ -128,7 +137,7 @@ ros2 run meu_pacote_robo proxy_seguranca_node
 
 ## ✍️ COLABORADORES
 
-- **Gustavo Moreira**
+- **Gustavo Moreira Silva**
 - **Victor Souza Ferreira**
 - **Vinicius**
 - **Matheus**
