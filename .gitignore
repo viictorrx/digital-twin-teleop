@@ -72,3 +72,13 @@ venv/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Ignorar pastas temporarias da Unity
+**/[Ll]ibrary/
+**/[Tt]emp/
+**/[Oo]bj/
+**/[Bb]uilds/
+**/[Ll]ogs/
+**/UserSettings/
+**/*.csproj
+**/*.sln
