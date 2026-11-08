@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="logo_guardiao.png" alt="Logotipo Oficial - Guardião Digital Twin" width="320"/>
+</p>
+
 # Projeto 2 | Digital Twin & Teleoperação 🤖
 
 > Um sistema de teleoperação segura para inspeção remota de ambientes perigosos, conectando a simulação do Gazebo a um gêmeo digital interativo na Unity.
