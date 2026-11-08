@@ -8,7 +8,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/ROS_2-Humble-22314E?style=flat-square&logo=ros&logoColor=white" alt="ROS 2">
-  <img src="https://img.shields.io/badge/Gazebo-Simulação-FF6F00?style=flat-square&logo=gazebo&logoColor=white" alt="Gazebo">
+  <img src="https://img.shields.io/badge/Gazebo-Simulação-FF6F00?style=flat-square" alt="Gazebo">
   <img src="https://img.shields.io/badge/Unity-Digital_Twin-000000?style=flat-square&logo=unity&logoColor=white" alt="Unity">
 </p>
 
