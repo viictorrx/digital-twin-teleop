@@ -70,22 +70,19 @@ graph TD
     U -- "Input Manual (WASD / E)" --> P
     P -- "Comando Validado" --> R
     R -- "Comando de Velocidade (cmd_vel)" --> G
-
-    Mapeamento para ROS 2 e Gazebo
+Mapeamento para ROS 2 e Gazebo
 Movimento e teleoperação (cmd_vel): Corresponde às velocidades linear e angular aplicadas durante a patrulha autônoma ou no modo EmergenciaManual (WASD), com prioridade do operador ao pressionar E.
 
 Leque de sensores e desvio: Corresponde à leitura de proximidade/obstáculos (Raycast na Layer Obstaculos) e à seleção do lado com maior espaço livre.
 
 Dosímetro e zona crítica (/radiation / µSv/h): Corresponde à proximidade do robô em relação à Zona_Reator e à classificação de risco exibida no DetectorRadiacaoHUD.
 
-
-
 📁 Estrutura do Repositório
 Plaintext
-├── gazebo_ros_ws/                    # Workspace do ROS 2 (Backend e Simulação)
-│   ├── src/                          # Código fonte dos nós em Python/C++
-│   ├── launch/                       # Arquivos de inicialização (.launch.py)
-│   └── urdf/                         # Modelos 3D do robô para o Gazebo
+├── gazebo_ros_ws/                  # Workspace do ROS 2 (Backend e Simulação)
+│   ├── src/                        # Código fonte dos nós em Python/C++
+│   ├── launch/                     # Arquivos de inicialização (.launch.py)
+│   └── urdf/                       # Modelos 3D do robô para o Gazebo
 ├── unity_digital_twin/               # Pasta base do Gêmeo Digital na Unity
 │   └── teste-do-mapa/                # Projeto principal da Unity 6 (abrir no Unity Hub)
 │       ├── Assets/
@@ -94,12 +91,10 @@ Plaintext
 │       │   └── scripts/              # RobotController.cs, CameraController.cs, ZonaRadiacao.cs, DetectorRadiacaoHUD.cs
 │       ├── Packages/                 # Dependências e pacotes da Unity
 │       └── ProjectSettings/          # Configurações do projeto Unity 6
-├── logo_guardiao.png                 # Logotipo oficial do projeto Guardião
+├── logo_guardiao.png               # Logotipo oficial do projeto Guardião
 ├── .gitignore                        # Arquivos temporários/cache ignorados pelo Git
 └── README.md                         # Documentação do projeto
-
-
-  🛠️ Pré-requisitos
+🛠️ Pré-requisitos
 Para rodar o projeto em outro computador sem problemas:
 
 Unity Hub & Unity Editor (Unity 6) com suporte a projetos 3D padrão/URP conforme a cena.
@@ -108,22 +103,17 @@ Git instalado para clonar e atualizar o repositório.
 
 ROS 2 Humble e Gazebo (opcionais caso você vá rodar apenas a simulação interativa na Unity 6, e necessários para a camada ROS 2/Gazebo).
 
-
-
-  ⚙️ Como Executar
+⚙️ Como Executar
 1. Clonar e abrir o projeto na Unity 6
 Clone o repositório e entre na pasta do projeto:
 
 Bash
 git clone <URL_DO_REPOSITORIO>
-
-
 Abra o Unity Hub, clique em Add -> Add project from disk e selecione especificamente a pasta unity_digital_twin/teste-do-mapa (não apenas a pasta unity_digital_twin).
 
 Aguarde a Unity 6 importar os Assets e Packages na primeira abertura.
 
 Abra a cena principal (SampleScene, contendo o ambiente cherobylu e o robo-base).
-
 
 2. Conferir a cena antes de apertar Play (caso abra em máquina limpa)
 robo-base: Verifique se possui o componente Rigidbody com Freeze Rotation marcado em X e Z (deixando Y livre), o RobotController.cs com a Layer Obstaculos configurada e o modelo visual robo-color alinhado.
@@ -147,8 +137,6 @@ cd gazebo_ros_ws
 colcon build
 source install/setup.bash
 ros2 launch meu_pacote_robo simulacao.launch.py
-
-
 🎥 Vídeo de Demonstração
 [Insira aqui o link do YouTube ou Google Drive com o vídeo de demonstração do projeto funcionando]
 
