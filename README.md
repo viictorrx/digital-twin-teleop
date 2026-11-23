@@ -50,6 +50,8 @@ O ambiente 3D (`cherobylu`) reproduz uma área urbana e industrial com aproxima�
 
 ## 🏗️ Arquitetura do Sistema
 
+## 🏗️ Arquitetura do Sistema
+
 ```mermaid
 graph TD
     subgraph Simulação
@@ -70,6 +72,7 @@ graph TD
     U -- "Input Manual (WASD / E)" --> P
     P -- "Comando Validado" --> R
     R -- "Comando de Velocidade (cmd_vel)" --> G
+
 Mapeamento para ROS 2 e Gazebo
 Movimento e teleoperação (cmd_vel): Corresponde às velocidades linear e angular aplicadas durante a patrulha autônoma ou no modo EmergenciaManual (WASD), com prioridade do operador ao pressionar E.
 
