@@ -82,3 +82,5 @@ Thumbs.db
 **/UserSettings/
 **/*.csproj
 **/*.sln
+*.slnx
+**/*.slnx
